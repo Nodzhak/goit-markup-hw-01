@@ -40,14 +40,16 @@ color: var(--clr-white-first);
 text-decoration: none;}
 
 .navigation {
+text-decoration: none;
 font-weight: 500;
-text-decoration: none;}
+color: var(--clr-black-first);}
 .navigation:hover, 
 .navigation:focus{
-color: var(--clr-blue-second)}
+color: var(--clr-blue-second);}
+
+.navigation.current {color: var(--clr-blue-second);}
 
 .address {
-font-weight: 400;
 color: var(--clr-black-second);
 text-decoration: none;
 }
@@ -93,12 +95,10 @@ line-height: 1.1;
 color: var(--clr-white-second);}
 
 .subtitle {
-font-weight: 500;
 font-size: 20px;
 line-height: 1.2;}
 
 .text {
-font-weight: 400;
 color: var(--clr-black-second);}
 
 .button-hero {
