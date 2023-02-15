@@ -16,125 +16,207 @@
 
   <body>
     <header class="header">
-      <nav>
-        <a href="./index.html" class="logo-one"
-          >Web<span class="logo-two">Studio</span></a
-        >
-        <ul class="style-type">
-          <li><a class="navigation" href="./index.html">Studio</a></li>
-          <li><a class="navigation current" href="./portfolio.html">Portfolio</a></li>
-          <li><a class="navigation" href="#">Contacts</a></li>
-        </ul>
-      </nav>
+      <div class="container nav-header">
+        <nav class="header-navigation">
+          <a href="./index.html" class="logo-one"
+            >Web<span class="logo-two">Studio</span></a
+          >
 
-      <address>
-        <ul class="style-type">
-          <li>
-            <a class="address" href="mailto:info@devstudio.com" class="mail"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="address" href="tel:+110001111111" class="phone">+11 (000) 111-11-11</a>
-          </li>
-        </ul>
-      </address>
+          <ul class="nav-list-header">
+            <li><a class="navigation" href="./index.html">Studio</a></li>
+            <li>
+              <a class="navigation current" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li><a class="navigation" href="#">Contacts</a></li>
+          </ul>
+        </nav>
+        <address>
+          <ul class="style-type-nav">
+            <li>
+              <a class="address" href="mailto:info@devstudio.com" class="mail"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="address" href="tel:+110001111111" class="phone"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </header>
 
     <main>
-      <section>
-        <h1 hidden>link</h1>
-        <ul class="style-type">
-          <li><button type="button" class="button-portfolio">All</button></li>
-          <li><button type="button" class="button-portfolio">Web Site</button></li>
-          <li><button type="button" class="button-portfolio">App</button></li>
-          <li><button type="button" class="button-portfolio">Design</button></li>
-          <li><button type="button" class="button-portfolio">Marketing</button></li>
-        </ul>
-        <h2 hidden>navigation</h2>
-        <ul class="style-type">
-          <li>
-            <img
-              src="./images/banking-app-interface-concept.jpg"
-              width="360"
-              alt="Product Designer">
-            <h3 class="subtitle">Banking App Interface Concept</h3>
-            <p>App</p>
-          </li>
-          <li>
-            <img
-              src="./images/cashless-payment.jpg"
-              width="360"
-              alt="Frontend Developer">
-            <h3 class="subtitle">Cashless Payment</h3>
-            <p>Marketing</p>
-          </li>
-          <li>
-            <img src="./images/meditaion-app.jpg" 
-            width="360" 
-            alt="Marketing">
-            <h3 class="subtitle">Meditaion App</h3>
-            <p>App</p>
-          </li>
-          <li>
-            <img
-              src="./images/taxi-service.jpg"
-              width="360"
-              alt="UI Designer">
-            <h3 class="subtitle">Taxi Service</h3>
-            <p>Marketing</p>
-          </li>
-          <li>
-            <img
-              src="./images/screen-illustrations.jpg"
-              width="360"
-              alt="UI Designer">
-            <h3 class="subtitle">Screen Illustrations</h3>
-            <p>Design</p>
-          </li>
-          <li>
-            <img
-              src="./images/online-courses.jpg"
-              width="360"
-              alt="UI Designer">
-            <h3 class="subtitle">Online Courses</h3>
-            <p>Marketing</p>
-          </li>
-          <li>
-            <img
-              src="./images/instagram-stories-concept.jpg"
-              width="360"
-              alt="UI Designer">
-            <h3 class="subtitle">Instagram Stories Concept</h3>
-            <p>Design</p>
-          </li>
-          <li>
-            <img
-              src="./images/organic-food.jpg"
-              width="360"
-              alt="UI Designer">
-            <h3 class="subtitle">Organic Food</h3>
-            <p>Web Site</p>
-          </li>
-          <li>
-            <img
-              src="./images/fresh-coffee.jpg"
-              width="360"
-              alt="UI Designer">
-            <h3 class="subtitle">Fresh Coffee</h3>
-            <p>Web Site</p>
-          </li>
-        </ul>
+      <section class="secction-app">
+        <div class="container">
+          <h1 hidden>link</h1>
+          <ul class="style-type-button">
+            <li>
+              <button type="button" class="container-button-portfolio">
+                All
+              </button>
+            </li>
+            <li>
+              <button type="button" class="container-button-portfolio">
+                Web Site
+              </button>
+            </li>
+            <li>
+              <button type="button" class="container-button-portfolio">
+                App
+              </button>
+            </li>
+            <li>
+              <button type="button" class="container-button-portfolio">
+                Design
+              </button>
+            </li>
+            <li>
+              <button type="button" class="container-button-portfolio">
+                Marketing
+              </button>
+            </li>
+          </ul>
+
+          <h2 hidden>navigation</h2>
+          <ul class="style-type-portfolio">
+            <li class="direction-work">
+              <a href="" class="title-app"
+                ><img
+                  src="./images/banking-app-interface-concept.jpg"
+                  width="360"
+                  alt="Product Designer"
+                />
+                <div class="text-direction">
+                  <h3 class="subtitle-porfolio">
+                    Banking App Interface Concept
+                  </h3>
+                  <p class="app-name">App</p>
+                </div></a
+              >
+            </li>
+            <li class="direction-work">
+              <a href="" class="title-app"
+                ><img
+                  src="./images/cashless-payment.jpg"
+                  width="360"
+                  alt="Frontend Developer"
+                />
+                <div class="text-direction">
+                  <h3 class="subtitle-porfolio">Cashless Payment</h3>
+                  <p class="app-name">Marketing</p>
+                </div></a
+              >
+            </li>
+            <li class="direction-work">
+              <a href="" class="title-app"
+                ><img
+                  src="./images/meditaion-app.jpg"
+                  width="360"
+                  alt="Marketing"
+                />
+                <div class="text-direction">
+                  <h3 class="subtitle-porfolio">Meditaion App</h3>
+                  <p class="app-name">App</p>
+                </div></a
+              >
+            </li>
+            <li class="direction-work">
+              <a href="" class="title-app"
+                ><img
+                  src="./images/taxi-service.jpg"
+                  width="360"
+                  alt="UI Designer"
+                />
+                <div class="text-direction">
+                  <h3 class="subtitle-porfolio">Taxi Service</h3>
+                  <p class="app-name">Marketing</p>
+                </div></a
+              >
+            </li>
+            <li class="direction-work">
+              <a href="" class="title-app"
+                ><img
+                  src="./images/screen-illustrations.jpg"
+                  width="360"
+                  alt="UI Designer"
+                />
+                <div class="text-direction">
+                  <h3 class="subtitle-porfolio">Screen Illustrations</h3>
+                  <p class="app-name">Design</p>
+                </div></a
+              >
+            </li>
+            <li class="direction-work">
+              <a href="" class="title-app"
+                ><img
+                  src="./images/online-courses.jpg"
+                  width="360"
+                  alt="UI Designer"
+                />
+                <div class="text-direction">
+                  <h3 class="subtitle-porfolio">Online Courses</h3>
+                  <p class="app-name">Marketing</p>
+                </div></a
+              >
+            </li>
+            <li class="direction-work">
+              <a href="" class="title-app"
+                ><img
+                  src="./images/instagram-stories-concept.jpg"
+                  width="360"
+                  alt="UI Designer"
+                />
+                <div class="text-direction">
+                  <h3 class="subtitle-porfolio">Instagram Stories Concept</h3>
+                  <p class="app-name">Design</p>
+                </div></a
+              >
+            </li>
+            <li class="direction-work">
+              <a href="" class="title-app"
+                ><img
+                  src="./images/organic-food.jpg"
+                  width="360"
+                  alt="UI Designer"
+                />
+                <div class="text-direction">
+                  <h3 class="subtitle-porfolio">Organic Food</h3>
+                  <p class="app-name">Web Site</p>
+                </div></a
+              >
+            </li>
+            <li class="direction-work">
+              <a href="" class="title-app"
+                ><img
+                  src="./images/fresh-coffee.jpg"
+                  width="360"
+                  alt="UI Designer"
+                />
+                <div class="text-direction">
+                  <h3 class="subtitle-porfolio">Fresh Coffee</h3>
+                  <p class="app-name">Web Site</p>
+                </div></a
+              >
+            </li>
+          </ul>
+        </div>
       </section>
-      
+
       <footer class="footer">
-        <a href="./index.html" class="logo-one"
-          >Web<span class="logo-two-white">Studio</span></a
-        >
-        <p class="footer-text">
-          Increase the flow of customers and sales for your business with
-          digital marketing & growth solutions.
-        </p>
+        <div class="container">
+          <a href="./index.html" class="logo-one"
+            >Web<span class="logo-two-white">Studio</span></a
+          >
+          <div class="container-footer"></div>
+          <p class="footer-text">
+            Increase the flow of customers and sales for your business with
+            digital marketing & growth solutions.
+          </p>
+        </div>
       </footer>
     </main>
   </body>
