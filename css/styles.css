@@ -32,6 +32,13 @@ p {
   padding: 0;
 }
 
+img{   
+    display: block;
+    max-width: 100%;
+    height: auto;}
+
+
+
 .container{
     max-width: 1158px;
     margin-left: auto;
@@ -40,7 +47,7 @@ p {
     padding-right: 15px;
 }
 
-.header{border-bottom: 1px solid var(--clr-white-third)}
+.header{/* border-bottom: 1px solid var(--clr-white-third) */}
     
 
 .nav-header{
@@ -79,20 +86,13 @@ list-style: none;
 }
 
 .features-item{
-    flex-basis: calc((100% - 3 * 24px) / 4);
-  /*   width: calc((100% - 312px) / 4);
-    margin-right: 24px; */
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
+    flex-basis: calc((100% - 3 * 24px) / 3);
 }
 
 .servise-title{
 font-size: 36px;
 line-height: 1.11;
 letter-spacing: 0.02em;
-margin-top: 120px;
 margin-bottom: 72px;
 text-align: center;
 text-transform: capitalize;
@@ -115,19 +115,19 @@ text-transform: capitalize;
 
 .servise-photo{
     flex-basis: calc((100%-2*24px)/3);
+    padding-bottom: 120px;
 }
 
 
 .direction-work{
-    flex-basis: calc(100%/3-24px);
-    border: 1px solid var(--clr-white-third);
+    flex-basis: calc((100%-3*24px)/3);
     margin-right: 24px;
     margin-bottom: 48px;
 }
 
-
 .text-direction{
-    padding: 32px 0 32px 32px;
+    padding: 32px 0 32px 16px;
+    border: 1px solid var(--clr-white-third);
 }
 
 .logo-one {
@@ -140,8 +140,7 @@ color: var(--clr-blue-first);
 text-decoration: none;
 text-transform: uppercase;
 margin-right: 76px;
-padding-top: 24px;
-padding-bottom: 24px;}
+}
 
 .logo-two {
 color: var(--clr-black-first);
@@ -216,17 +215,20 @@ background-color: var(--clr-white-first)}
   line-height: 1.11;
   text-align: center;
   text-transform: capitalize;
-  color: var(--clr-blue-first);
 }
 
 .people {
 background-color:var(--clr-backgraund-main);
 flex-basis: calc((100% - 3 * 24px) / 4);
-border-radius: 0px 0px 4px 4px;}
+border-radius: 0px 0px 4px 4px;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);;}
 
 .people-team{
     padding-top: 32px;
     padding-bottom: 32px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);;
 }
 
 .subtitle-team{
@@ -296,8 +298,7 @@ border-radius: 4px;
 border: none;
 cursor: pointer;
 letter-spacing: 0.04em;
-padding: 16px 32px;
-margin-bottom: 188px;}
+padding: 16px 32px;}
 .button-hero:hover, 
 .button-hero:focus{
 background-color:var(--clr-blue-second);}
