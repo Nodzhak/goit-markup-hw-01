@@ -176,7 +176,11 @@ margin-bottom: 16px;
   background-color: #2E2F42;
   padding: 8px 16px;
   outline: transparent;
+  transition: border-color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .subscribe-mail:hover,
 .subscribe-mail:focus{
   border-color: #4D5AE5;
@@ -196,6 +200,9 @@ color: var(--clr-white-second);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border: none;
 border-radius: 4px;
+transition: background-color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-subscribe:hover,
 .button-subscribe:focus{
@@ -686,6 +693,9 @@ display: block;
 margin: 0 auto;
 width: 8px;
 height: 8px;
+transition: fill;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-img{
@@ -726,6 +736,9 @@ transform: translateY(0);
   outline: transparent;
   resize: none;
   padding: 8px 16px;
+  transition: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .user-comment:hover,
 .user-comment:focus{
@@ -733,13 +746,13 @@ transform: translateY(0);
 }
 
 .contact-info{
-  width: 18px;
-  height: 18px;
-  position: absolute;
-  left: 0;
-  margin-left: 40px;
   margin-top: 11px;
-  margin-bottom: 11px;
+  left: 37px;
+  position: absolute;
+  transform: translateY(-5%);
+  transition: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-info:hover,
 .contact-info:focus{
@@ -755,6 +768,9 @@ transform: translateY(0);
   rgba(33, 33, 33, 0.2);
   background-color: transparent;
   outline: transparent;
+  transition: border-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .info-form:hover,
 .info-form:focus{
@@ -767,9 +783,9 @@ transform: translateY(0);
 }
 
 .modal-title{
-display: flex;
-justify-content: center;
-margin-bottom: 16px;
+  margin-bottom: 16px;
+  font-weight: 500;
+  text-align: center;
 }
 
 .contact-form{
@@ -787,21 +803,10 @@ margin-bottom: 16px;
 }
 
 .checkbox{
-  font-size: 12px;
-    line-height: 1.2;
-    letter-spacing: 0.04em;
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    bottom: 117px;
+  position: absolute;
+  width: 16px;
+  height: 16px;
 }
-
-.checkbox:checked+.policy-text::before {
-  background-color: transparent;
-  border: none;
-  background-image: url(../images/icons.svg#icon-property-click);
-  background-repeat: no-repeat;
-  background-position: center;}
 
 .btn-submit {
   margin-right: auto;
@@ -818,6 +823,9 @@ margin-bottom: 16px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+  transition: background-color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-submit:hover,
 .btn-submit:focus {
@@ -853,7 +861,7 @@ margin-bottom: 16px;
   margin-right: 8px;
 }
 .checkbox:checked + .privacy-policy::before {
-  background-image: url(../images/icons.svg#icon-property-click);
+  background-image: url(../images/icons.svg#icon-click);
 }
 
 .link-policy {
