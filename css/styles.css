@@ -806,6 +806,7 @@ transform: translateY(0);
   position: absolute;
   width: 16px;
   height: 16px;
+ appearance: none;
 }
 
 .btn-submit {
@@ -861,7 +862,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   margin-right: 8px;
 }
 .checkbox:checked + .privacy-policy::before {
-  background-image: url(../images/icons.svg#icon-click);
+  background-image: url(../images/click.svg#icon-click);
 }
 
 .link-policy {
