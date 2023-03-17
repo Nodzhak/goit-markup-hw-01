@@ -22,13 +22,9 @@
       <div class="container nav-header">
         <nav class="header-navigation">
           <a href="./index.html" class="logo-one"
-            >Web<span class="logo-two">Studio</span></a
-          >
-
+            >Web<span class="logo-two">Studio</span></a>
           <ul class="nav-list-header">
-            <li>
-              <a class="navigation current" href="./index.html">Studio</a>
-            </li>
+            <li><a class="navigation current" href="./index.html">Studio</a></li>
             <li><a class="navigation" href="./portfolio.html">Portfolio</a></li>
             <li><a class="navigation" href="#">Contacts</a></li>
           </ul>
@@ -47,7 +43,74 @@
             </li>
           </ul>
         </address>
+        <div class="mobile-btn">
+          <button type="button" class="menu-open js-open-menu">
+          <svg class="menu-open-icon" width="32" height="22">
+            <use href="./images/burger.svg#icon-burger"></use>
+          </svg>
+        </button>
+        </div>
       </div>
+
+      <div class="mobile-menu js-menu-container" >
+            <button type="button" class="menu-close js-close-menu" >
+              <svg class="backdrop-image" width="8" height="8">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <nav class="mobile-nav">
+              <ul class="mob-list">
+                <li class="mob-item">
+                  <a href="./index.html" class="mob-link current">Studio</a>
+                </li>
+                <li class="mob-item">
+                  <a href="./portfolio.html" class="mob-link">Portfolio</a>
+                </li>
+                <li class="mob-item">
+                  <a href="#" class="mob-link">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+            <address>
+              <ul class="mobile-list">
+                <li class="mobile-tel">
+                  <a class="mobile-contact" href="tel:+110001111111"
+                    >+11 (000) 111-22-33</a
+                  >
+                </li>
+                <li class="mobile-tel">
+                  <a class="mobile-mail"  href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a>
+                </li>
+              </ul>
+            </address>
+            <ul class="socials-list-mob">
+              <li class="socials-item">
+                <a class="socials-link" href="#"
+                  ><svg class="socials-icons">
+                    <use href="./images/icons.svg#icon-instagram"></use></svg
+                ></a>
+              </li>
+              <li class="socials-item">
+                <a class="socials-link" href="#"
+                  ><svg class="socials-icons">
+                    <use href="./images/icons.svg#icon-twitter"></use></svg
+                ></a>
+              </li>
+              <li class="socials-item">
+                <a class="socials-link" href="#"
+                  ><svg class="socials-icons">
+                    <use href="./images/icons.svg#icon-facebook"></use></svg
+                ></a>
+              </li>
+              <li class="socials-item">
+                <a class="socials-link" href="#"
+                  ><svg class="socials-icons">
+                    <use href="./images/icons.svg#icon-linkedin"></use></svg
+                ></a>
+              </li>
+            </ul>
+        <div>
     </header>
 
     <main>
@@ -74,7 +137,7 @@
                 </svg>
               </div>
               <h3 class="subtitle">Strategy</h3>
-              <p class="text">
+              <p class="general-text">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
@@ -86,7 +149,7 @@
                 </svg>
               </div>
               <h3 class="subtitle">Punctuality</h3>
-              <p class="text">
+              <p class="general-text">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
@@ -98,7 +161,7 @@
                 </svg>
               </div>
               <h3 class="subtitle">Diligence</h3>
-              <p class="text">
+              <p class="general-text">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
@@ -110,7 +173,7 @@
                 </svg>
               </div>
               <h3 class="subtitle">Technologies</h3>
-              <p class="text">
+              <p class="general-text">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
@@ -125,21 +188,24 @@
           <ul class="style-type">
             <li class="servise-photo">
               <img
-                src="./images/rectanglea.jpg"
+                srcset="./images/rectangle-one.jpg 1x, ./images/rectangle-one@2x 2x"
+                src="./images/rectangle-one.jpg"
                 width="360"
                 alt="we are doing 1"
               />
             </li>
             <li class="servise-photo">
               <img
-                src="./images/rectangleb.jpg"
+                srcset="./images/rectangle-two.jpg 1x, ./images/rectangle-two@2x 2x"
+                src="./images/rectangle-two.jpg"
                 width="360"
                 alt="we are doing 2"
               />
             </li>
             <li class="servise-photo">
               <img
-                src="./images/rectangled.jpg"
+                srcset="./images/rectangle-three.jpg 1x, ./images/rectangle-three@2x 2x"
+                src="./images/rectangle-three.jpg"
                 width="360"
                 alt="we are doing 3"
               />
@@ -153,7 +219,9 @@
           <h2 class="about-team">Our Team</h2>
           <ul class="style-type-team">
             <li class="people">
-              <img src="./images/mer.jpg" width="264" alt="Product Designer" />
+              <img 
+              srcset="./images/mark-guerrero.jpg 1x, ./images/mark-guerrero@2x.jpg 2x"
+              src="./images/mark-guerrero.jpg" width="264"  alt="Product Designer" />
               <div class="people-team">
                 <h3 class="subtitle-team">Mark Guerrero</h3>
                 <p class="text-team">Product Designer</p>
@@ -189,7 +257,8 @@
             </li>
             <li class="people">
               <img
-                src="./images/mera.jpg"
+                srcset="./images/tom-ford.jpg 1x, ./images/tom-ford@2x.jpg 2x"
+                src="./images/tom-ford.jpg"
                 width="264"
                 alt="Frontend Developer"
               />
@@ -227,7 +296,9 @@
               </div>
             </li>
             <li class="people">
-              <img src="./images/merb.jpg" width="264" alt="Marketing" />
+              <img 
+              srcset="./images/camila-garcia.jpg 1x, ./images/camila-garcia@2x.jpg 2x"
+              src="./images/camila-garcia.jpg" width="264" alt="Marketing" />
               <div class="people-team">
                 <h3 class="subtitle-team">Camila Garcia</h3>
                 <p class="text-team">Marketing</p>
@@ -262,7 +333,9 @@
               </div>
             </li>
             <li class="people">
-              <img src="./images/merc.jpg" width="264" alt="UI Designer" />
+              <img 
+              srcset="./images/daniel-wilson.jpg 1x, ./images/daniel-wilson@2x.jpg 2x"
+              src="./images/daniel-wilson.jpg" width="264" alt="UI Designer" />
               <div class="people-team">
                 <h3 class="subtitle-team">Daniel Wilson</h3>
                 <p class="text-team">UI Designer</p>
@@ -460,5 +533,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
