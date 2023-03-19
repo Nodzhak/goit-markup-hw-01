@@ -1326,3 +1326,9 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
 }
 
+.mobile-menu-header{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+}
